@@ -41,7 +41,7 @@ export const POST = async (req: Request) => {
             }),
             new TransactionInstruction({
                 programId: new PublicKey(MEMO_PROGRAM_ID),
-                data: Buffer.from("Fuck you", "utf8"),
+                data: Buffer.from("Experimenting", "utf8"),
                 keys: [],
             })
         )
