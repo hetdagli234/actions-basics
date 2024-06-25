@@ -3,10 +3,10 @@ import { ComputeBudgetProgram, Connection, PublicKey, Transaction, TransactionIn
 import { getDomainKeysWithReverses } from "@bonfida/spl-name-service"
 export const GET = (req: Request) => {
     const payload: ActionGetResponse = {
-        icon: new URL("/me.png", new URL(req.url).origin).toString(),
-        label: "Send Fuck you",
-        description: "STFU",
-        title: "Fuck you"
+        icon: new URL("/modi.png", new URL(req.url).origin).toString(),
+        label: "Click for Surprise",
+        description: "Surprise",
+        title: "Experimenting"
     }
 
     return Response.json(payload, {
