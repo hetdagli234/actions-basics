@@ -61,7 +61,7 @@ export const POST = async (req: Request) => {
         const payload: ActionPostResponse = await createPostResponse({
             fields: {
                 transaction,
-                message: `gm ${name}`
+                message: `Fuck you ${name}`
             }
         })
 
