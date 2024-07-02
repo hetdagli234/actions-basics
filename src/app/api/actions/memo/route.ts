@@ -1,6 +1,9 @@
 import { ACTIONS_CORS_HEADERS, ActionGetResponse, ActionPostRequest, ActionPostResponse, MEMO_PROGRAM_ID, createPostResponse, parseURL } from "@solana/actions"
 import { ComputeBudgetProgram, Connection, PublicKey, Transaction, TransactionInstruction, clusterApiUrl } from "@solana/web3.js"
 import { getDomainKeysWithReverses } from "@bonfida/spl-name-service"
+
+export const runtime = 'edge';
+
 export const GET = (req: Request) => {
     const payload: ActionGetResponse = {
         icon: new URL("/modi.jpeg", new URL(req.url).origin).toString(),
